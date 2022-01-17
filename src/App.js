@@ -1,6 +1,8 @@
-// import logo from './logo.svg';
+import React from 'react';
+import {Provider} from 'react-redux'
 import './App.css';
-import { Button } from 'reactstrap'
+
+import store from './store';
 
 import Header from './Components/Header'
 import Footer from './Components/Footer'
@@ -9,13 +11,14 @@ import Chatbot from './Components/Chatbot'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <Chatbot />
-      <Footer />
-      
-    </div>
+    <Provider store={store}>
+      <div className="conteudo">
+        <Header />
+        <Home />
+        <Chatbot />
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 

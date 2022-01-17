@@ -1,0 +1,15 @@
+.chat-conteudo {
+    display: grid;
+    grid-template-rows: 80px auto 40px;   
+    height: calc(100vh - 150px);
+    padding: 5px;
+}
+.chat-header {
+    text-align: center;
+}
+.chat-conversation{
+    position: relative;
+}
+.chat-message {
+    position: relative;
+}

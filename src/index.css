@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header {
+  grid-area: header;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%);
+  color: aliceblue;
+}
+
+.home{
+  grid-area: home;
+  background: #fff;
+}
+
+.chatbot {
+  grid-area: chatbot;
+  background-color: #e6e6e6;
+  height: calc(100vh - 102px);
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background: #a7b9d8;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+  position: absolute;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'home home home chatbot'
+  'footer footer footer footer';
+}

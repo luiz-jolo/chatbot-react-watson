@@ -1,6 +1,9 @@
 import React from "react";
 
 export default props =>
-    <footer >
-        test
-    </footer>
+    <div className="footer">
+        <footer >
+            test
+        </footer>
+    </div>
+    
